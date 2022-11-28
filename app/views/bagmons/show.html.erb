@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bagmon.description %>
+</p>
+
+<p>
+  <strong>Force:</strong>
+  <%= @bagmon.force %>
+</p>
+
+<p>
+  <strong>Agility:</strong>
+  <%= @bagmon.agility %>
+
+  
+</p>
+
+
+<p>
+  <strong>Icon:</strong>
+  <%= @bagmon.icon %>
+</p>
+<p>
+  <%= image_tag @bagmon.icon, size: "100x100" %>
+</p>
+
+
+<p>
+  <strong>Category:</strong>
+  <%= @bagmon.category_id %>
+</p>
+
+<%= link_to 'Edit', edit_bagmon_path(@bagmon) %> |
+<%= link_to 'Back', bagmons_path %>
